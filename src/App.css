@@ -1,38 +1,45 @@
 .App {
   text-align: center;
+  background-color: rgba(148, 243, 110, 0.322);
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+}
+.board {
+  width: 90%;
+  margin: 30px auto;
+}
+.BoardMain>.BoardList>Table{
+  width: 80%;
+  margin: 20px auto;
+}
+.BoardMain>.BoardList>Table tr>td {
+  height: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btnGroup{
+  margin-top: 50px;
+}
+.btnGroup Button{
+  margin: 0 10px;
+}
+.container{
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 게시글 제목 */
+.cardTitle {
+  font-weight: 700;
+  font-size: 30px;
+}
+/* 게시글 하단 */
+.bottomText{
+  color: grey;
+}
+/* 작성자 */
+.writer{
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
